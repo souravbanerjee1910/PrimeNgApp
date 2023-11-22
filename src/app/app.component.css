@@ -1,0 +1,169 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  height: 50px;
+  width: 100%;
+  background:rgb(182,191,198);
+}
+
+/* Fb whatsapp insta icons main div*/
+.pogo{
+  display: flex;
+  float: right;
+  height: 28px;
+  width: 9%;
+  margin-top: 12px;
+  margin-right: 16px;
+
+
+}
+
+/* Fb whatsapp insta icons */
+.fb,
+.insta,
+.whats {
+  height: 30px;
+  width: 50%;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+/* Search  */
+#search{
+height: 500px;
+width: 100%;
+background-size: cover;
+background-image: url('../assets/logo/bgImg.png');
+}
+
+/* Quick Search */
+#quickSearch{
+height: 600px;
+width: 80%;
+margin-left: 10%;
+margin-top: 20px;
+}
+
+/* quickSearch Elements */
+#quickSearchTitle{
+  color: rgba(110, 38, 4, 0.904);
+  font-size: 30px;
+  display: block;
+  font-weight: bold;
+  margin-left: 2%;
+
+
+}
+/* quickSearchSubHeading */
+#quickSearchSubTitle{
+  line-height: 3;
+  color: rgb(183,196,204);
+  margin-left: 2%;
+}
+
+/* container */
+.titleContainer{
+margin-top: 5%;
+margin-left: 2%;
+height: 180px;
+width: 30%;
+border: 2px solid black;
+float: left;
+
+
+}
+
+#brand{
+  color: whitesmoke;
+  font-size: 30px;
+  display: flex;
+  width: fit-content;
+  position: absolute;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.tableImg{
+  height: 330px;
+  width: 1333px;
+}
+#logo{
+  background-color: white;
+  height: 100px;
+  width: 8%;
+  font-size: 75px;
+  border-radius: 50%;
+  margin-left: 46%;
+  position:absolute;
+  margin-top: 70px;
+
+}
+#d{
+  margin-left: 17px;
+}
+#ins{
+  color:#fff;
+  text-shadow: 3px 5px #000000;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 190px;
+  margin-left: 430px;
+}
+#searchBar{
+  /* border: 2px solid #fff; */
+  height: 20px;
+  width: 500px;
+  margin-left: 393px;
+  position: absolute;
+  margin-top: 255px;
+
+}
+
+
+/* dropdown select */
+select{
+  height: 46px;
+  width: 33%;
+  border-radius: 10px;
+  justify-content: space-between;
+  display: flex;
+  float: right;
+}
+
+/* tile Components  */
+.tileComponent1{
+  height: 180px;
+  width: 80%;
+}
+.tileComponent2{
+  height: 180px;
+  width: 81%;
+}
+.tileComponent3{
+  height: 180px;
+  width: 80%;
+}
+.tileComponent4{
+  height: 180px;
+  width: 80%;
+}
+.tileComponent5{
+  height: 180px;
+  width: 81%;
+}
+.tileComponent6{
+  height: 180px;
+  width: 80%;
+}
+
+
+/* resturant links  */
+.res1{
+  margin-top:-150px;
+  margin-left: 103px;
+  text-decoration: none;
+}
+
