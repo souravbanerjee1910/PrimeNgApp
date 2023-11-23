@@ -31,7 +31,7 @@ export class AppComponent {
     },
     {
       src: '../assets/logo/rest_img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg',
-      name: 'Soul Food',
+      name: 'Soul Cuisine ',
       bio:' Best Soul Food'
     },
     {
