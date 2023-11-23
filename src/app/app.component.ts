@@ -10,27 +10,34 @@ export class AppComponent {
   foodcardData = [
     {
       src: '../assets/logo/rest_img/albert-YYZU0Lo1uXE-unsplash.jpg',
-      name: 'Indian cuisine'
+      name: 'Indian Cuisine',
+      bio:' Best indian Food'
     },
     {
       src: '../assets/logo/rest_img/alessio-dandi-LusjIyLfZ70-unsplash.jpg',
-      name: 'Italian cuisine'
+      name: 'Italian Cuisine',
+      bio:' Best Italian Food'
     },
     {
       src: '../assets/logo/rest_img/jason-leung-poI7DelFiVA-unsplash.jpg',
-      name: 'Chinese cuisine'
+      name: 'Chinese Cuisine',
+      bio:' Best Chinese Food'
+
     },
     {
       src: '../assets/logo/rest_img/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg',
-      name: 'Thai cuisine'
+      name: 'Thai Cuisine',
+      bio:' Best Thai Food'
     },
     {
       src: '../assets/logo/rest_img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg',
-      name: 'Soul food'
+      name: 'Soul Food',
+      bio:' Best Soul Food'
     },
     {
       src: '../assets/logo/rest_img/ruben-ramirez-xhKG01FN2uk-unsplash.jpg',
-      name: 'Japanese Cuisine'
+      name: 'Japanese Cuisine',
+      bio:' Best Japanese Food'
     }
   ]
 

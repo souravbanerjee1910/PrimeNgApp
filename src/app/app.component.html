@@ -146,10 +146,11 @@
           <div class="titleContainer" *ngFor="let item of foodcardData">
             <div class="tileComponent1">
               <img [src]="item.src" class="tileComponent1" alt="Resturant 1">
-            </div>
+            </div>    
 
             <div class="res1">
               <a href="#" class="res1">{{item.name}}</a>
+              <p class="bio">{{item.bio}}</p>
             </div>
           </div>
         </div>

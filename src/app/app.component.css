@@ -9,6 +9,12 @@ header{
   background:rgb(182,191,198);
 }
 
+.bio{
+
+  margin-left: 109px;
+  margin-top: 14px;
+}
+
 /* Fb whatsapp insta icons main div*/
 .pogo{
   display: flex;
@@ -17,7 +23,6 @@ header{
   width: 9%;
   margin-top: 12px;
   margin-right: 16px;
-
 
 }
 
@@ -55,7 +60,6 @@ margin-top: 20px;
   font-weight: bold;
   margin-left: 2%;
 
-
 }
 /* quickSearchSubHeading */
 #quickSearchSubTitle{
@@ -66,28 +70,33 @@ margin-top: 20px;
 
 /* container */
 .titleContainer{
-margin-top: 5%;
-margin-left: 2%;
-height: 180px;
-width: 30%;
-border: 2px solid black;
-float: left;
-
-
+  margin-top: 5%;
+  margin-left: 2%;
+  height: 180px;
+  width: 30%;
+  border: 2px solid black;
+  float: left;
+  border: 1px solid;
+  padding: 6px;
+  box-shadow: 8px 9px #BFBFBF;
 }
 
+
+/* header brand */
 #brand{
-  color: whitesmoke;
-  font-size: 30px;
-  display: flex;
-  width: fit-content;
-  position: absolute;
-    margin-top: 10px;
     margin-left: 30px;
+    color: whitesmoke;
+    font-size: 30px;
+    display: flex;
+    width: fit-content;
+    position: absolute;
+    margin-top: 6px;
+
 }
 .tableImg{
-  height: 330px;
-  width: 1333px;
+    width: 1333px;
+    height: 330px;
+
 }
 #logo{
   background-color: white;
@@ -102,6 +111,7 @@ float: left;
 }
 #d{
   margin-left: 17px;
+
 }
 #ins{
   color:#fff;
@@ -111,9 +121,9 @@ float: left;
   position: absolute;
   margin-top: 190px;
   margin-left: 430px;
+
 }
 #searchBar{
-  /* border: 2px solid #fff; */
   height: 20px;
   width: 500px;
   margin-left: 393px;
@@ -121,7 +131,6 @@ float: left;
   margin-top: 255px;
 
 }
-
 
 /* dropdown select */
 select{
@@ -159,11 +168,11 @@ select{
   width: 80%;
 }
 
-
 /* resturant links  */
 .res1{
   margin-top:-150px;
-  margin-left: 103px;
+  margin-left: 104px;
   text-decoration: none;
-}
+} 
+
 
