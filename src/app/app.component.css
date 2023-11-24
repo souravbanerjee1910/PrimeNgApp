@@ -74,7 +74,7 @@ margin-top: 20px;
   margin-left: 2%;
   height: 180px;
   width: 30%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   float: left;
   border: 1px solid;
   padding: 6px;
@@ -175,4 +175,40 @@ select{
   text-decoration: none;
 } 
 
+/* div2 */
+.div2{
+  border: 2px solid yellow;
+}
+
+.copy{
+  margin-left: 528px;
+  font-size: 18px;
+}
+
+
+.foot1{
+  text-align: center;
+}
+
+.footer{
+  margin-bottom: -17px;
+
+}.footDiv{
+  float: left;
+  height:80px;
+  width: 33%;
+  border-right: 2px solid black;
+  text-align: center;
+  background-color: #b6bfc6;
+  color: #fff; 
+  padding: 1px;
+  
+}
+.foot{
+  background-color: #b6bfc6;
+}
+
+ul>li{
+  list-style-type: none;
+}
 
