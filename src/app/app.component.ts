@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import{LocationModel} from './location.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,7 +12,7 @@ export class AppComponent {
   quickSearchSubTitle='Find Resturants By MealType';
 
   // food card data
-  foodcardData = [
+  foodcardData=[
     {
       src: '../assets/logo/rest_img/albert-YYZU0Lo1uXE-unsplash.jpg',
       name: 'Indian cuisine',
@@ -41,31 +41,37 @@ export class AppComponent {
 
   // Search Location Data
 
-  searchLocationData = [
+  searchLocationData :LocationModel [] =[
     {
       city: 'Chandrapura',
       state: 'Jharkhand',
+      stateID:1,
     },
     {
       city: 'Chatra',
       state: 'Jharkhand',
+      stateID:2,
     },
 
     {
       city: 'Daltonganj',
       state: 'Jharkhand',
+      stateID:3,
     },
     {
       city: 'Deoghar',
       state: 'Jharkhand',
+      stateID:4,
     },
     {
       city: 'Dhanbad',
       state: 'Jharkhand',
+      stateID:5,
     },
     {
       city: 'Dumka',
       state: 'Jharkhand',
+      stateID:6,
     },
   ];
 
@@ -118,4 +124,9 @@ export class AppComponent {
       MenuItem: 'Veg Kabab',
     },
   ];
+
+  onSelect(event:Event){
+    console.log((event.target as HTMLInputElement).value );
+  }
+
 }

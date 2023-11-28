@@ -16,10 +16,11 @@
       </div>
       <div>
         <span id="ins">{{title}}</span>
+
         <div id="searchBar" >
-          <select>
+          <select (change)="onSelect($event)">
             <option value="default">--Select Your City--</option>
-            <option *ngFor="let location of searchLocationData">{{location.city}}</option>
+            <option [value]="location.stateID" *ngFor="let location of searchLocationData">{{location.city}}</option>
           </select>
 
           <select>
