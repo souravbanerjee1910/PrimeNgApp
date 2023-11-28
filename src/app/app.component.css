@@ -1,16 +1,16 @@
-body{
+/* body{
   margin: 0;
   padding: 0;
-}
+} */
 
-header{
+/* header{
   height: 50px;
   width: 100%;
   background:rgb(182,191,198);
-}
+} */
 
 /* Fb whatsapp insta icons main div*/
-.pogo{
+/* .pogo{
   display: flex;
   float: right;
   height: 28px;
@@ -19,17 +19,17 @@ header{
   margin-right: 16px;
 
 
-}
+} */
 
 /* Fb whatsapp insta icons */
-.fb,
+/* .fb,
 .insta,
 .whats {
   height: 30px;
   width: 50%;
   cursor: pointer;
   margin-right: 8px;
-}
+} */
 
 /* Search  */
 #search{

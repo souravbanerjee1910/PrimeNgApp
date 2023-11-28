@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  height: 50px;
+  width: 100%;
+  background:rgb(182,191,198);
+}
+
+/* Fb whatsapp insta icons main div*/
+.pogo{
+  display: flex;
+  float: right;
+  height: 28px;
+  width: 9%;
+  margin-top: 10px;
+  margin-right: 16px;
+
+
+}
+
+/* Fb whatsapp insta icons */
+.fb,
+.insta,
+.whats {
+  height: 30px;
+  width: 50%;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+#brand{
+  color: whitesmoke;
+  font-size: 30px;
+  display: flex;
+  width: fit-content;
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 30px;
+}

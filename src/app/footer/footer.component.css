@@ -1,0 +1,29 @@
+/* For footer section  */
+.centered {
+  text-align: center;
+  background: rgb(183,196,204);
+  margin-bottom: -16px;
+
+}
+
+.footdiv ul{
+  float: left;
+  height: 80px;
+  width: 30%;
+  text-align: center;
+  border-right: 2px solid black;
+  list-style-type: none;
+
+}
+footer , .footdiv ,ul{
+  background: rgb(183,196,204);
+}
+
+li{
+  margin-top: 16px;
+}
+
+.np{
+  border: transparent !important;
+ }
+/*  */

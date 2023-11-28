@@ -6,32 +6,10 @@
     <title>Document</title>
   </head>
 
+
   <body>
-    <header>
-      <div id="brand">Developer Funnel</div>
 
-      <div class="pogo">
-
-            <img
-             class="fb"
-             src="../assets/logo/facebook logo.png"
-             alt="facebook"
-
-           />
-
-            <img
-             class="insta"
-             src="../assets/logo/instagram logo.png"
-             alt="instagram"
-            />
-            <img
-              class="whats"
-             src="../assets/logo/whatsapp logo.png"
-              alt="whatsapp"
-            />
-      </div>
-
-    </header>
+    <app-header></app-header>
     <div id="search">
       <div id="logo">
         <span id="d">D!</span>
@@ -80,69 +58,6 @@
         </div>
 
         <div class="mainbox">
-          <!-- resturant 1
-          <div class="titleContainer">
-            <div class="tileComponent1">
-              <img src="../assets/logo/rest_img/albert-YYZU0Lo1uXE-unsplash.jpg" class="tileComponent1" alt="Resturant 1">
-            </div>
-
-            <div class="res1">
-              <a href="#" class="res1">Indian cuisine</a>
-            </div>
-          </div> -->
-
-          <!-- resturant 2 -->
-          <!-- <div class="titleContainer">
-            <div class="tileComponent2">
-              <img src="../assets/logo/rest_img/alessio-dandi-LusjIyLfZ70-unsplash.jpg" class="tileComponent2" alt="Resturant 2">
-            </div>
-            <div class="res1">
-              <a href="#" class="res1">
-                Italian cuisine</a>
-            </div>
-          </div> -->
-
-          <!-- resturant 3 -->
-          <!-- <div class="titleContainer">
-            <div class="tileComponent3">
-              <img src="../assets/logo/rest_img/jason-leung-poI7DelFiVA-unsplash.jpg" class="tileComponent3" alt="Resturant 3">
-            </div>
-            <div class="res1">
-              <a href="#" class="res1">Chinese cuisine</a>
-            </div>
-          </div> -->
-
-           <!-- resturant 4 -->
-          <!-- <div class="titleContainer">
-            <div class="tileComponent4">
-              <img src="../assets/logo/rest_img/kayleigh-harrington-yhn4okt6ci0-unsplash.jpg" class="tileComponent4" alt="Resturant 4">
-            </div>
-            <div class="res1">
-              <a href="#" class="res1">Thai cuisine</a>
-            </div>
-          </div> -->
-
-            <!-- resturant 5 -->
-          <!-- <div class="titleContainer">
-            <div class="tileComponent5">
-              <img src="../assets/logo/rest_img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg" class="tileComponent5" alt="Resturant 5">
-            </div>
-            <div class="res1">
-              <a href="#" class="res1">Soul food</a>
-            </div>
-          </div> -->
-            <!-- resturant 6 -->
-          <!-- <div class="titleContainer">
-            <div class="tileComponent6">
-              <img src="../assets/logo/rest_img/ruben-ramirez-xhKG01FN2uk-unsplash.jpg" class="tileComponent6" alt="Resturant 6">
-            </div>
-            <div class="res1">
-              <a href="#" class="res1">Japanese Cuisine</a>
-            </div>
-          </div> -->
-
-        </div>
-        <div class="mainbox">
           <div class="titleContainer" *ngFor="let item of foodcardData">
             <div class="tileComponent1">
               <img [src]="item.src" class="tileComponent1" alt="Resturant 1">
@@ -154,7 +69,8 @@
           </div>
         </div>
       </div>
-    <footer></footer>
+      
+      <app-footer></app-footer>
 
   </body>
 </html>
