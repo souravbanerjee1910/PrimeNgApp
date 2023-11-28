@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tomato</title>
   </head>
 
 
@@ -12,39 +12,24 @@
     <app-header></app-header>
     <div id="search">
       <div id="logo">
-        <span id="d">D!</span>
+        <span id="d">{{logo}}</span>
       </div>
       <div>
-        <span id="ins">Search Places Near to you </span>
+        <span id="ins">{{title}}</span>
         <div id="searchBar" >
           <select>
-            <option>Delhi</option>
-            <option>Bangalore</option>
-            <option>Mumbai</option>
-            <option>Chennai</option>
-            <option>Kolkata</option>
-            <option>Hyderabad</option>
-            <option>Pune</option>
+            <option value="default">--Select Your City--</option>
+            <option *ngFor="let location of searchLocationData">{{location.city}}</option>
           </select>
 
           <select>
-            <option>Hydrabadi Zaika</option>
-            <option>Behrauz Biryani</option>
-            <option>Reddy's Biryani</option>
-            <option>Almor</option>
-            <option>Moms Biryani</option>
-            <option>Paradise Biryani</option>
-            <option>Nandu's Biryani</option>
+            <option value="default">--Select Resturant--</option>
+            <option *ngFor="let resturantName of resturantNameData">{{resturantName.restName}}</option>
           </select>
 
           <select>
-            <option>Hydrabadi Dum Biryani</option>
-            <option>Chicken Tandoor Dum Biryani</option>
-            <option>Chicken Tandoor Masala Dum Biryani</option>
-            <option>Veg Dum Biryani</option>
-            <option>Maska Dum Biryani</option>
-            <option>Chicken Tandoor Kabab</option>
-            <option>Veg Kabab</option>
+            <option value="default">--Select Dish--</option>
+            <option *ngFor="let dishName of dishNameData">{{dishName.MenuItem}}</option>
           </select>
 
         </div>
@@ -53,7 +38,7 @@
 
       <div id="quickSearch">
         <div class="quickSearchTXT">
-          <span id="quickSearchTitle">Quick Search </span>
+          <span id="quickSearchTitle">{{Search}}</span>
           <span  id="quickSearchSubTitle">Find Resturants By MealType</span>
         </div>
 
@@ -69,7 +54,7 @@
           </div>
         </div>
       </div>
-      
+
       <app-footer></app-footer>
 
   </body>
