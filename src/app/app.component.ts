@@ -42,8 +42,6 @@ export class AppComponent implements OnInit {
     },
   ];
 
-  // Search Location Data
-// API Bin ID:- 65687edf12a5d37659a12400
 
   searchLocationData: ICity[] = [];
 
@@ -86,8 +84,11 @@ export class AppComponent implements OnInit {
         console.error('Error fetching dish data:', error);
       }
     );
-  }  onSelect(event: Event): void {
-    console.log((event.target as HTMLInputElement).value);
+  }
+
+  onSelect(event: Event): void {
+  console.log((event.target as HTMLInputElement).value);
+
   }
 
 }

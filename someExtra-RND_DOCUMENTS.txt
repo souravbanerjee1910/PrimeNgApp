@@ -1,0 +1,4 @@
+https://jsonbin.io/app/dashboard
+
+for hosting free API
+api kinda acts like a DB where you have your data init
