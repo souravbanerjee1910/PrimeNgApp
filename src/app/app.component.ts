@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ICity } from './location.model';
 import { HomeService } from './services/home.service';
-// import { HttpClientModule } from '@angular/common/http';
+import { IresturantData } from './resturantData.model';
+import { IdishNameData } from './dishData.model';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -45,74 +47,47 @@ export class AppComponent implements OnInit {
 
   searchLocationData: ICity[] = [];
 
+  resturantNameData: IresturantData[] = [];
+
+  dishNameData:IdishNameData[]=[];
+
+
+
+
   constructor(private homeService: HomeService) {}
 
   ngOnInit(): void {
-    this.homeService.getCity().subscribe((data: ICity[]) => {
+    this.homeService.getCity().subscribe(
+      (data: ICity[]) => {
         this.searchLocationData = data;
-        console.log('Received data:', data);
+        console.log('Received city data:', data);
       },
       (error: any) => {
         console.error('Error fetching city data:', error);
       }
     );
-  }
 
-  // Resturant Names
-  // API BIN ID:-6569832454105e766fd80c68
+    this.homeService.getResturantName().subscribe(
+      (data: IresturantData[]) => {
+        this.resturantNameData = data;
+        console.log('Received restaurant data:', data);
+      },
+      (error: any) => {
+        console.error('Error fetching restaurant data:', error);
+      }
+    );
 
-  resturantNameData = [
-    {
-      restName: 'Hydrabadi Zaika',
-    },
-    {
-      restName: 'Behrauz Biryani',
-    },
-    {
-      restName: 'Reddys Biryani',
-    },
-    {
-      restName: 'Almor',
-    },
-    {
-      restName: 'Moms Biryani',
-    },
-    {
-      restName: 'Paradise Biryani',
-    },
-    {
-      restName: 'Nandus Biryani',
-    },
-  ];
-
-  // Dishes Available
-  // API BIN ID:-6569841654105e766fd80cb0
-
-  dishNameData = [
-    {
-      MenuItem: 'Chicken Tandoor Dum Biryani',
-    },
-    {
-      MenuItem: 'Hydrabadi Dum Biryani',
-    },
-    {
-      MenuItem: 'Chicken Tandoor Masala Dum Biryani',
-    },
-    {
-      MenuItem: 'Veg Dum Biryani',
-    },
-    {
-      MenuItem: 'Maska Dum Biryani',
-    },
-    {
-      MenuItem: 'Chicken Tandoor Kabab',
-    },
-    {
-      MenuItem: 'Veg Kabab',
-    },
-  ];
-
-  onSelect(event: Event): void {
+    this.homeService.getDishesName().subscribe(
+      (data: IdishNameData[]) => {
+        this.dishNameData = data;
+        console.log('Received dish data:', data);
+      },
+      (error: any) => {
+        console.error('Error fetching dish data:', error);
+      }
+    );
+  }  onSelect(event: Event): void {
     console.log((event.target as HTMLInputElement).value);
   }
+
 }

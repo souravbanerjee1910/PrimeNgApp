@@ -5,6 +5,3 @@ export interface ICity {
     stateID:number
 
 }
-
-
-
