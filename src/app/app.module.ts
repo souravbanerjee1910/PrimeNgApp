@@ -8,23 +8,28 @@ import { AccordionModule } from 'primeng/accordion'; // Use 'primeng/accordion' 
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeService } from './services/home.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     AccordionModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
 
 
   ],
-  providers: [],
+  providers: [
+    HomeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,18 +1,19 @@
-import { Component } from '@angular/core';
-import{LocationModel} from './location.model';
+import { Component, OnInit } from '@angular/core';
+import { ICity } from './location.model';
+import { HomeService } from './services/home.service';
+// import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   logo = 'D!';
   title = 'Search Places Near to you';
-  Search='Quick Search';
-  quickSearchSubTitle='Find Resturants By MealType';
+  Search = 'Quick Search';
+  quickSearchSubTitle = 'Find Resturants By MealType';
 
-  // food card data
-  foodcardData=[
+  foodcardData = [
     {
       src: '../assets/logo/rest_img/albert-YYZU0Lo1uXE-unsplash.jpg',
       name: 'Indian cuisine',
@@ -40,42 +41,26 @@ export class AppComponent {
   ];
 
   // Search Location Data
+// API Bin ID:- 65687edf12a5d37659a12400
 
-  searchLocationData :LocationModel [] =[
-    {
-      city: 'Chandrapura',
-      state: 'Jharkhand',
-      stateID:1,
-    },
-    {
-      city: 'Chatra',
-      state: 'Jharkhand',
-      stateID:2,
-    },
+  searchLocationData: ICity[] = [];
 
-    {
-      city: 'Daltonganj',
-      state: 'Jharkhand',
-      stateID:3,
-    },
-    {
-      city: 'Deoghar',
-      state: 'Jharkhand',
-      stateID:4,
-    },
-    {
-      city: 'Dhanbad',
-      state: 'Jharkhand',
-      stateID:5,
-    },
-    {
-      city: 'Dumka',
-      state: 'Jharkhand',
-      stateID:6,
-    },
-  ];
+  constructor(private homeService: HomeService) {}
+
+  ngOnInit(): void {
+    this.homeService.getCity().subscribe((data: ICity[]) => {
+        this.searchLocationData = data;
+        console.log('Received data:', data);
+      },
+      (error: any) => {
+        console.error('Error fetching city data:', error);
+      }
+    );
+  }
 
   // Resturant Names
+  // API BIN ID:-6569832454105e766fd80c68
+
   resturantNameData = [
     {
       restName: 'Hydrabadi Zaika',
@@ -101,6 +86,8 @@ export class AppComponent {
   ];
 
   // Dishes Available
+  // API BIN ID:-6569841654105e766fd80cb0
+
   dishNameData = [
     {
       MenuItem: 'Chicken Tandoor Dum Biryani',
@@ -125,8 +112,7 @@ export class AppComponent {
     },
   ];
 
-  onSelect(event:Event){
-    console.log((event.target as HTMLInputElement).value );
+  onSelect(event: Event): void {
+    console.log((event.target as HTMLInputElement).value);
   }
-
 }
