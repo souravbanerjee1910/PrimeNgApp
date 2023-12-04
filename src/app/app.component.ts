@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   title = 'Search Places Near to you';
   Search = 'Quick Search';
   quickSearchSubTitle = 'Find Resturants By MealType';
+  
 
   foodcardData = [
     {
