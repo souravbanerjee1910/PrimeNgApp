@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ICity } from './location.model';
 import { HomeService } from './services/home.service';
-import { IresturantData } from './resturantData.model';
-import { IdishNameData } from './dishData.model';
+import { IresturantData } from './location.model';
+import { IdishNameData } from './location.model';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   title = 'Search Places Near to you';
   Search = 'Quick Search';
   quickSearchSubTitle = 'Find Resturants By MealType';
-  
+
 
   foodcardData = [
     {

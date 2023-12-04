@@ -2,8 +2,8 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable, catchError, map } from "rxjs";
 import { ICity } from "../location.model";
-import { IresturantData } from "../resturantData.model";
-import { IdishNameData } from "../dishData.model";
+import { IresturantData } from "../location.model";
+import { IdishNameData } from "../location.model";
 
 @Injectable()
 export class HomeService {
@@ -50,7 +50,7 @@ export class HomeService {
   }
 
 
-  
+
   getDishesName():Observable<IdishNameData[]>{
     return this.http.get<any>(this.DishNameUrl).pipe(
       map((response: any) => {
