@@ -1,11 +1,35 @@
 
 /* Search  */
-#search{
+/* #search{
 height: 500px;
 width: 100%;
 background-size: cover;
 background-image: url('../assets/logo/bgImg.png');
+
+} */
+
+
+#search {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden; /* Ensure the blur doesn't spill out */
 }
+
+#search::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/logo/bgImg.png');
+  background-size: cover;
+  filter: blur(2px); /* Adjust the blur intensity as needed */
+  z-index: -1; /* Place the pseudo-element behind other content */
+}
+
+/*  */
 
 /* Quick Search */
 #quickSearch{
