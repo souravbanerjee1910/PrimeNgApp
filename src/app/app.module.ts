@@ -12,6 +12,7 @@ import { HomeService } from './services/home.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ListingComponent } from './listing/listing.component';
 import { HomeComponent } from './home/home.component';
+import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     ListingComponent,
     HomeComponent,
+    NoPageFoundComponent,
 
   ],
   imports: [
