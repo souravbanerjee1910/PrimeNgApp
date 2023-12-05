@@ -9,6 +9,14 @@ background-image: url('../assets/logo/bgImg.png');
 } */
 
 
+.innerCardData{
+  position: absolute;
+  left: 3%;
+  margin-top: 145%;
+}
+
+
+
 #search {
   position: relative;
   height: 500px;
@@ -156,6 +164,7 @@ select{
 .res1{
   margin-top:-150px;
   margin-left: 103px;
+  position: relative;
   /* text-decoration: none; */
 }
 /* dropdown */

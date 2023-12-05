@@ -14,6 +14,10 @@ export class AppComponent implements OnInit {
   title = 'Search Places Near to you';
   Search = 'Quick Search';
   quickSearchSubTitle = 'Find Resturants By MealType';
+  innerCardData = 'Best Hand Picked Food Delevered to you ';
+  selectDish = '--Select Dish--';
+  selectResturant = '--Select Resturant--';
+  selectCity = '--Select Your City--';
 
 
   foodcardData = [

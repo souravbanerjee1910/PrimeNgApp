@@ -10,11 +10,15 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeService } from './services/home.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ListingComponent } from './listing/listing.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    ListingComponent,
+    HomeComponent,
 
   ],
   imports: [

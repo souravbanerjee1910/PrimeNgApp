@@ -19,18 +19,18 @@
 
         <div id="searchBar" >
           <select (change)="onSelect($event)">
-            <option value="default">--Select Your City--</option>
+            <option value="default">{{selectCity}}</option>
             <option [value]="location.stateID" *ngFor="let location of searchLocationData">{{location.city}}</option>
           </select>
 
 
           <select>
-            <option value="default">--Select Resturant--</option>
+            <option value="default">{{selectResturant}}</option>
             <option *ngFor="let resturantName of resturantNameData">{{resturantName.restName}}</option>
           </select>
 
           <select>
-            <option value="default">--Select Dish--</option>
+            <option value="default">{{selectDish}}</option>
             <option *ngFor="let dishName of dishNameData">{{dishName.MenuItem}}</option>
           </select>
 
@@ -52,6 +52,11 @@
 
             <div class="res1">
               <a href="#" class="res1">{{item.name}}</a>
+              <div class="res1">
+                <h5 class="innerCardData">
+                  {{innerCardData}}
+                </h5>
+              </div>
             </div>
           </div>
         </div>
