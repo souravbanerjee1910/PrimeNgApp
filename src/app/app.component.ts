@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
   selectDish = '--Select Dish--';
   selectResturant = '--Select Resturant--';
   selectCity = '--Select Your City--';
+  tomato ='Tomato';
 
 
   foodcardData = [

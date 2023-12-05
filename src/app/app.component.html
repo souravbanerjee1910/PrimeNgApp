@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tomato</title>
+    <title>{{tomato}}</title>
   </head>
 
   <body>
@@ -15,13 +15,12 @@
       </div>
       <div>
         <span id="ins">{{title}}</span>
-
+        
         <div id="searchBar" >
           <select (change)="onSelect($event)">
             <option value="default">{{selectCity}}</option>
             <option [value]="location.stateID" *ngFor="let location of searchLocationData">{{location.city}}</option>
           </select>
-
 
           <select>
             <option value="default">{{selectResturant}}</option>
