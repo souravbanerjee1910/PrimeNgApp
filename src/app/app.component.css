@@ -31,10 +31,10 @@ background-image: url('../assets/logo/bgImg.png');
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/logo/bgImg.png');
+  background-image: url('../assets/logo/bgImg.png')!important;
   background-size: cover;
   filter: blur(2px); /* Adjust the blur intensity as needed */
-  z-index: -1; /* Place the pseudo-element behind other content */
+  z-index: 0; /* Place the pseudo-element behind other content */
 }
 
 /*  */
@@ -101,8 +101,12 @@ float: left;
 
 }
 #d{
+  
+  position: absolute;
+  margin-top: -9px;
   margin-left: 17px;
 }
+
 #ins{
   color:#fff;
   text-shadow: 3px 5px #000000;

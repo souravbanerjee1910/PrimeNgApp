@@ -1,21 +1,16 @@
-<footer class="footWhole">
-  <div class="centered">&copy;{{copy}}</div>
-  <div class="footdiv">
+<footer class="footer">
+  <div class="logo">
+    <p class="inside">&copy; 2023 Developer Funnel. All rights reserved.</p>
+  </div>
+  <div class="about-contact">
     <ul>
-      <li>{{contact}}</li>
-      <li>{{about}}</li>
+      <li><a [routerLink]="['./listing']">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
     </ul>
   </div>
-  <div class="footdiv">
-    <ul>
-      <li>{{contact}}</li>
-      <li>{{about}}</li>
-    </ul>
-  </div>
-  <div class="footdiv">
-    <ul class="np">
-      <li>{{contact}}</li>
-      <li>{{about}}</li>
-    </ul>
+  <div class="social-media">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
   </div>
 </footer>

@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   selectDish = '--Select Dish--';
   selectResturant = '--Select Resturant--';
   selectCity = '--Select Your City--';
-  tomato ='Tomato';
+  tomato = 'Tomato';
 
 
   foodcardData = [
@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
     },
     {
       src: '../assets/logo/rest_img/ruben-ramirez-xhKG01FN2uk-unsplash.jpg',
-      name: 'Japanese Cuisine',
+      name: 'Japanese Food',
     },
   ];
 
